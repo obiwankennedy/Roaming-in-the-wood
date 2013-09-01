@@ -10,13 +10,14 @@
 \usepackage[francais]{babel}
 %\usepackage[cyr]{aeguill}
 \usepackage{listings}
+\usepackage{color}
 \usepackage{graphicx}
 \usepackage[linktocpage]{hyperref}
 
 
-\newcommand\don[5]{
+\newcommand\don[6]{
 \textbf{#1} \\
-#2
+(#6) - #2
 \begin{itemize}
 \item{ \textbf{jet}: #3}
 \item{ \textbf{Cout}: #4}
@@ -152,9 +153,9 @@ Avis:\\
 \textbf{\large Dons} 
 \vspace{0.5cm}
 
-\don{Les bons mots}{+2 en social passif}{}{}{117}
-\don{Cri de ralliement}{}{Manipulation + Expression + Gloire}{1 Volonté}{119}
-\don{Canaliser la rage}{}{Vigueur + Survie + Pureté}{1 point d'essence}{142}
+\don{Les bons mots}{+2 en social passif pour encourager ou apaiser}{Aucun}{Aucun}{117}{Réflexe}
+\don{Cri de ralliement}{Redonne un point de volonté à ses alliés pendant la bataille}{manipulation + expression + Gloire}{1 volonté}{119}{Instantanée}
+\don{Canaliser la rage}{Chaque succès permet de sacrifier un tour passé en forme gouru pour obtenir +1 en force ou en dextérité.}{Vigeur + Survie + Pureté}{1 point d'essence}{142}{Reflèxe}
 
 \clearpage
 \section{Rahu}
@@ -191,9 +192,9 @@ Avis:\\
 \vspace{0.5cm}
 
 
-\don{Redresser}{}{}{1 Point d'Essence}{125}
-\don{Nuit Noire}{coupe la lumière }{Astuce + Larcin + Ruse}{1 volonté}{146}
-\don{Clarté}{+ 5 en initiative}{}{1 Point d'Essence}{137-136}
+\don{Redresser}{redresse un objet, réduit les bosses, affecte jusqu'à un metre carrée par tour}{aucun}{1 Point d'Essence}{125}{Instantanée}
+\don{Nuit Noire}{coupe les lumières électriques dans une zone (200 mettre carré par succès), la zone doit être en vue}{Astuce + Larcin + Ruse}{1 volonté}{146}{Instantanée}
+\don{Clarté}{+ 5 en initiative}{aucun}{1 Point d'Essence}{137-136}{Réflexe}
 
 \clearpage
 \section{Irraka}
@@ -232,9 +233,9 @@ Avis:\\
 \textbf{\large Dons} 
 \vspace{0.5cm}
 
-\don{Communion avec la forêt}{}{Manipulation + Survie + Ruse}{1 point d'essence}{130-131}
-\don{Pieds de Brume}{}{}{1 point d'essence}{114}
-\don{Diriger le feu}{}{Force + Survie + Gloire}{1 point d'essence}{109}
+\don{Communion avec la forêt}{Transe de communion avec la forêt, le personnage voit 500m à la ronde, et chaque succés ajoute 100m et des informations. Le personnage est inconscient de ce qui se passe dans réellement autour de lui. Il ne peut décrire ce qu'il voit quand le don est actif. Il peut ainsi apprendre la présence d'intru avec un succès, avec trois, il peut apprendre le nombre, le sexe et l'espèce.}{Manipulation + Survie + Ruse}{1 point d'essence}{130-131}{Instantanée}
+\don{Pieds de Brume}{Mode passif: -1 pour te pister, Mode actif: -3 (depense d'essence)}{aucun}{1 point d'essence}{114}{Réflexe}
+\don{Diriger le feu}{Contrôle un feu, mais ne le crée pas. Le feu peut servir pour attaquer une personne ou tous simplement empêcher le feu de brûler un foret ou augmenter la température pour détruire toute trace. Pour un contrôle fin le test subit un malus de 2}{Force + Survie + Gloire}{1 point d'essence}{109}{Instantanée}
 
 \clearpage
 \section{Elodothe}
@@ -257,7 +258,7 @@ C'est après cet événement que tu as rencontré les sœurs \Lynn , \Jessica et
 Tu venais de subir ton premier changement. Tu es donc devenu loup-garou alors que tu t'amusais avec deux personnes très importante de Chicago.
 Elles t'ont accueilli dans leur meute et ont camouflé tes bêtises. \\
 En bouquet final, tu as volé beaucoup d'argent a tes clients. 
-Tu es parti avec \Lynn, \Jessica et \Leonard pour le Canada. Vous vous êtes installé dans le petit village de SpringField. Ce petit village canadien est un endroit parfait. \\
+Tu es parti avec \Lynn, \Jessica et \Leonard pour le Canada. Vous vous êtes installé dans le petit village de Springfield. Ce petit village canadien est un endroit parfait. \\
 Tu es devenu le shérif de la ville. Ton boulot est très administratif, mais tu peux faire un peu comme tu veux niveau horaire. 
 Au sein de la meute, tu passes pour le vilain petit canard, tu aimerais prouver le contraire. \\
 
@@ -272,9 +273,9 @@ Avis:\\
 \textbf{\large Dons} 
 \vspace{0.5cm}
 
-\don{Changement partiel}{}{Vigueur + Survie + Instinct primal}{[1 point d'essence]}{121}
-\don{Voix autoritaire}{}{ Manipulation + Intimidation + Honneur vs Résolution + calme}{1 Point d'Essence}{107}
-\don{Aura de trêves}{}{Manipulation + Persuasion + Honneur}{1 Point d'Essence}{113}
+\don{Changement partiel}{permet de changer une partie de son corps dans la forme de son choix: Les bras du gauru ou le museau du loup}{Vigueur + Survie + Instinct primal}{[1 point d'essence]}{121}{Instantanée ou Réflexe}
+\don{Voix autoritaire}{Donne un ordre à 1, 2 ou 3 personnes, l'ordre prend la forme d'une phrase complète: «cache ses cadavres dans la ravin près de la rivière», Les cibles obéissent pendant 5 minutes par succès. Un malus de -1 par personne au-delà de la première est appliqué.}{ Manipulation + Intimidation + Honneur vs Résolution + calme}{1 Point d'Essence}{107}{Opposition, résistance réflexe}
+\don{Aura de trêves}{Projette une aura de calme, efficace avant que le combat commence. Les personnes doivent dépenser un point de volonté pour commettre un acte violent}{Manipulation + Persuation + Honneur}{1 Point d'Essence}{113}{Instantanée}
 
 
 \clearpage
@@ -311,9 +312,9 @@ Avis:\\
 \textbf{\large Dons} 
 \vspace{0.5cm}
 
-\don{Langue animale}{}{Manipulation + Animaux + Pureté}{1 point de volonté}{130}
-\don{Sentir la malice}{}{Astuce + Occulte + Sagesse}{}{114}
-\don{Témoignage de cadavre}{}{Manipulation + Occulte + Pureté}{1 point d'essence}{129}
+\don{Langue animale}{Permet de parler avec les animaux pendant une minute avec un animal.}{Manipulation + Animaux + Pureté}{1 point de volonté}{130}{réflexe}
+\don{Sentir la malice}{Identifier des sentiments violents: haine, colère.. chez un individu}{intelligence + Empathie + sagesse contre Calme et instinct primal}{}{135}{Opposition, résistance reflexe.}
+\don{Témoignage de cadavre}{Le cadavre décrit ce qu'il a vu depuis sa mort et les infos ne peuvent pas être plus ancienne que 24h}{Manipulation + Occulte + Pureté}{1 point d'essence}{129}{Instantanée}
 
 \chapter{L'histoire}
 \section{Informations à dire aux PJ en début de partie  (ou à rappeler) }
@@ -348,7 +349,7 @@ Les Pj effectuent le rite de la chasse sacrée. Ils chassent un esprit renard/ru
 L'esprit ressemble à un renard avec les pattes avants bodybuildées. Il a un large sourire, très large un peu à la façon du Chat du Cheshire. La chasse a lieu dans le \textbf{monde des esprits}. Tails part en avance comme le veut le rituel. Il est facile de suivre sa trace (\textbf{Astuce + calme}).\\
 \begin{figure}[!h]
 \caption{\label{arbre_mort} Refuge de \textbf{Tails}}
-\includegraphics[scale=0.12]{scaring_tree.png}
+\includegraphics[scale=0.8]{scaring_tree.png}
 \end{figure}
  En remontant la piste, ils arrivent aux pieds d'un esprit d'arbre mort. Il semble symétrique. Les branches et les racines forment un schéma assez proche.\\ 
 L'odeur disparaît dessous les racines. Il est possible de passer sous les racines mais seulement en forme de loup (\textbf{Vigueur + survie + instinct primal}). Le renard attend dans le creux du tronc, il fera un grand sourire au loup sous lui puis il partira en courant sur une branche et fera un saut géant. Faite une course poursuite selon les règles du monde des ténèbres. Le renard à 23 en vitesse et il jette 7 dés pour la course. Il est normalement très difficile pour les joueurs de le rattraper. Laissez les espérer.\\ 
@@ -601,7 +602,7 @@ Il y a principalement trois raisons de sa présence:
 \item \Thomas : Est dans la zone, il souffre d'un rituels. Un ongle d'argent sous la peau le rend fou de douleur.
 \item \Elisabeth : La monitrice de la mairie, elle est du Québec. Elle Raconte des contes aux enfants, elle est influencé par l'esprit de la peur.
 \item Le tableau dans la salle de cours de \Lynn. 
-\item Le maire est possédé par un esprit de la ville. Chicago veut se venger
+\item Le maire est possédé par un esprit de la ville de Chicago. Il veut se venger de \Peter
 \item Une meute de Loup qui visite le village et tue.
 \end{itemize}
 
@@ -613,17 +614,68 @@ Vendredi soir, \Lynn a été possédé par un esprit de Lune corrompu. Cet espri
 \section{PNJ Importants}
 \subsection{Les esprits mutants}
 \label{esprit_mutant}
+\paragraph{L'esprit du Sommeil}
+\begin{itemize}
+\item Puissance : 2
+\item Finesse : 7
+\item Résistance : 5
+\item Volonté : 7
+\item Taille : 4
+\item Corpus : 9
+\item Essence : 15
+\item Défense : 7
+\item Initiative : 12
+\item Vitesse : 4
+\item Influences : Sommeil 2
+\item bénédictions: Vision matérielle, télékinésie (P.66 predators),Entrave, Portée, Éclair (il envoit des plumes orange comme le pu). 
+\end{itemize}
+
+\paragraph{L'indien}
+\begin{itemize}
+\item Puissance : 2
+\item Finesse : 4
+\item Résistance : 2
+\item Volonté : 6
+\item Taille : 3
+\item Corpus : 5
+\item Essence : 10
+\item Défense : 4
+\item Initiative : 6
+\item Vitesse : 10
+\item Influences : Indien 1
+\item bénédictions: Déluge, décorporation, vision matérielle.
+\end{itemize}
+
+
+
+\paragraph{Le pompier}
+\begin{itemize}
+\item Puissance : 
+\item Finesse :
+\item Résistance :
+\item Volonté :
+\item Taille :
+\item Corpus :
+\item Essence :
+\item Défense :
+\item Initiative :
+\item Vitesse :
+\item Influences : 
+\item bénédictions:
+\end{itemize}
 
 \subsection{Les assistants}
-\begin{tabular}{|l|c|r|}
+\begin{tabularx}{\linewidth}{|c|c|X|}
 \hline
-Nom & Rôle \\
+Nom & Rôle & Description \\
 \hline
-Collin &  & \\
-Dustin &  & \\
-Grant & Assistant de \Leonard pour le parc naturel & Jeune homme de 17 ans, un peu hippy sur les bords.  \\
+Collin & Assistant de \Peter & Homme, 40 ans, grand et solide, un peu lent à la détente. Il est timide mais ne se laisse pas marcher sur les pieds\\
 \hline
-\end{tabular}
+Dustin & Assistant de \Peter & Homme, 30 ans, Mince et vif. C'est un frimeur et un beau parleur.\\
+\hline
+Grant & Assistant de \Leonard & Jeune homme de 17 ans, un peu hippy sur les bords.  \\
+\hline
+\end{tabularx}
 
 \clearpage
 
@@ -641,13 +693,45 @@ Cette section explique des points en détails, cela vous permettra d'improviser.
 \section{Les règles homemade et création}
 \subsection{Don: Peur mortelle}
 \label{Peur_mortelle}
-\don{Peur noire}{Immobilise un adversaire, la victime reste immobilisé jusqu'à la fin de la scène, que le lanceur annule le don ou que la victime reçoit un coup}{Présence + Intimidation + Gloire}{1 point d'essence}{Aucune}
+\don{Peur noire}{Immobilise un adversaire. L'effet s'estompe quand une des conditions suivantes arrive:
+\begin{itemize}
+\item A la fin de la scène
+\item La victime reçoit un dégât. 
+\item l'utilisateur désactive le don. 
+\end{itemize}}{Présence + Intimidation + Gloire}{1 point d'essence}{Aucune}{Réflexe}
 \subsection{Rituel: Douleur d'argent}
 Le rituel de \textbf{Douleur d'argent} est l'ultime façon de faire souffrir un Uratha. Il consiste à lui faire ressentir en continue la douleur de la malédiction de Mère Lune.
-Il nécessite l'utilisation du don \textbf{Machoire d'argent} car les ingrédients du rituel ne peuvent être qu'issue de ce don. Le ritualiste réalise une incision sur le condamné. Il coupe alors deux doigts d'un uratha ayant activé {Machoire d'argent}. Toutes les personnes présentent pendant le rituel font un jet de dégénérescence pouvant résulter à la perte d'un point d'harmonie.
+Il nécessite l'utilisation du don \textbf{Mâchoire d'argent} car les ingrédients du rituel ne peuvent être qu'issue de ce don. Le ritualiste réalise une incision sur le condamné. Il coupe alors deux doigts d'un uratha ayant activé {Machoire d'argent}. Toutes les personnes présentent pendant le rituel font un jet de dégénérescence pouvant résulter à la perte d'un point d'harmonie.
 \subsection{Fétiche: Lame Dévoreuse}
 \label{devoreuse}
-La Lame Dévoreuse est une hache de guerre grande et lourde. Un esprit de Sangsue/gourmandise est dedans. L'arme ne nécessite aucune activation. Elle donne un bonus de 4dés pour l'attaque (comme une hache normale), les 10 et les 9 se relancent. Tout succès provoque un dégât létal et le vol d'un point d'essence. Si la cible n'a pas d'essence (ou équivalent), cela inflige un dégât supplémentaire.    
+La Lame Dévoreuse est une hache de guerre grande et lourde. Un esprit de Sangsue/gourmandise est dedans. L'arme ne nécessite aucune activation. Elle donne un bonus de 4dés pour l'attaque (comme une hache normale), les 10 et les 9 se relancent. Tout succès provoque un dégât létal et le vol d'un point d'essence. Si la cible n'a pas d'essence (ou équivalent), cela inflige un dégât supplémentaire.  
+
+
+
+
+\section{Cadre du scénario}
+Ce scénario a été écrit dans le contexte de la 71ième Nuit Tenebrae dont le thème était enfance. 
+
+Il a était joué dans diverses événements. 
+\begin{itemize}
+\item 71ième Nuit Tenebrae, le 18/02/2012 : \href{http://www.tenebrae-mundis.com/les-nuits-tenebrae/teaser-de-la-71e-nuit-tenebrae}{Lien}, 5 joueurs
+\item Eclipse, Convention de JDR de La Lune Rousse de Rennes : \href{http://www.ascreb.org/clubs/jdr/convention/archives/eclipse10.php}{Lien}, 10 joueurs
+\item RRX, Convention de JDR de Polytechnique 2012, 10 Joueurs. 
+\item Les Joutes Du Téméraires (2012), convention de JDR de Nancy, 5 joueurs
+\item Octogones, convention de JDR à Lyon. 10 Joueurs.
+\item Session privée, 5 joueurs, Aout 2012.
+\item Session privée, 5 joueurs, Février 2013.
+\end{itemize}
+
+Total de joueurs: 50.
+
+\section{Carte heuristique}  
+\begin{figure}[!ht]
+\includegraphics[width=\textwidth]{canada_2.eps}
+\caption{Schéma du scénario définissant l'ensemble des relations entre les différents personnages. Image vectorielle, réaliser avec le logiciel \href{https://github.com/obiwankennedy/rmindmap}{Rmindmap}}
+%\includegraphics[width=\textwidth]{canada_2.eps}
+\label{fig:mindmap}
+\end{figure}
 
 \end{flushleft}
 \end{document}
