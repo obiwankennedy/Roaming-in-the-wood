@@ -10,4 +10,4 @@ post:
 	mv *.toc build/
 
 scenario: canada.tex
-	xelatex canada.tex
+	pdflatex canada.tex
